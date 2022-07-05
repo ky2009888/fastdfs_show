@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.upload.file.apps.mapper.AdUserLoginMapper">
+
+    <resultMap id="BaseResultMap" type="com.upload.file.apps.domain.AdUserLogin">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="userId" column="user_id" jdbcType="OTHER"/>
+            <result property="equipmentId" column="equipment_id" jdbcType="OTHER"/>
+            <result property="ip" column="ip" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="longitude" column="longitude" jdbcType="DECIMAL"/>
+            <result property="latitude" column="latitude" jdbcType="DECIMAL"/>
+            <result property="createdTime" column="created_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,user_id,equipment_id,
+        ip,address,longitude,
+        latitude,created_time
+    </sql>
+</mapper>
