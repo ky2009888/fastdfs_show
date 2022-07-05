@@ -4,9 +4,9 @@ spring:
   application:
     name: fastdfs_show
   redis:
-    host: 81.68.181.87
+    host: IP
     port: 6379
-    password: 123321
+    password: XXXX
     lettuce:
       pool:
         max-active: 10
